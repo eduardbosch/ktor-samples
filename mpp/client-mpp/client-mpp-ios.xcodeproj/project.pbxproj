@@ -12,6 +12,7 @@
 		2C9BE46921183DE400670E90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C9BE46721183DE400670E90 /* Main.storyboard */; };
 		2C9BE46B21183DE600670E90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C9BE46A21183DE600670E90 /* Assets.xcassets */; };
 		2C9BE46E21183DE600670E90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C9BE46C21183DE600670E90 /* LaunchScreen.storyboard */; };
+		AA1C8E539179087D94B420CC /* Pods_client_mpp_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 564D3EA0E2AA0AB9526890B2 /* Pods_client_mpp_ios.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		01F25CB7F2BFE01D777753DE /* Pods-client-mpp-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-client-mpp-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-client-mpp-ios/Pods-client-mpp-ios.debug.xcconfig"; sourceTree = "<group>"; };
 		0A787738217ED9D300905BF7 /* client_mpp.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = client_mpp.framework; path = build/bin/iosX64/main/debug/framework/client_mpp.framework; sourceTree = "<group>"; };
 		2C9BE46021183DE400670E90 /* client-mpp-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "client-mpp-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C9BE46321183DE400670E90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +38,8 @@
 		2C9BE46A21183DE600670E90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C9BE46D21183DE600670E90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C9BE46F21183DE600670E90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		564D3EA0E2AA0AB9526890B2 /* Pods_client_mpp_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_client_mpp_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5896AD7428820A8C369D798 /* Pods-client-mpp-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-client-mpp-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-client-mpp-ios/Pods-client-mpp-ios.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA1C8E539179087D94B420CC /* Pods_client_mpp_ios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,6 +60,8 @@
 				0A787738217ED9D300905BF7 /* client_mpp.framework */,
 				2C9BE46221183DE400670E90 /* client-mpp-ios */,
 				2C9BE46121183DE400670E90 /* Products */,
+				C983F8F896DAD18E911CD31C /* Pods */,
+				88217F9A545A30C951BF9CD8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +86,23 @@
 			path = "client-mpp-ios";
 			sourceTree = "<group>";
 		};
+		88217F9A545A30C951BF9CD8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				564D3EA0E2AA0AB9526890B2 /* Pods_client_mpp_ios.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C983F8F896DAD18E911CD31C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				01F25CB7F2BFE01D777753DE /* Pods-client-mpp-ios.debug.xcconfig */,
+				D5896AD7428820A8C369D798 /* Pods-client-mpp-ios.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,10 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2C9BE47221183DE600670E90 /* Build configuration list for PBXNativeTarget "client-mpp-ios" */;
 			buildPhases = (
+				1AC6F525A963AF0DDE00F6D0 /* [CP] Check Pods Manifest.lock */,
 				2C9BE45C21183DE400670E90 /* Sources */,
 				2C9BE45D21183DE400670E90 /* Frameworks */,
 				2C9BE45E21183DE400670E90 /* Resources */,
 				2C946B0421184178003A898D /* Embed Frameworks */,
+				BA365D4CE75FD6EF10BBF3D8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -145,6 +171,61 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1AC6F525A963AF0DDE00F6D0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-client-mpp-ios-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA365D4CE75FD6EF10BBF3D8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-client-mpp-ios/Pods-client-mpp-ios-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-client-mpp-ios/Pods-client-mpp-ios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2C9BE45C21183DE400670E90 /* Sources */ = {
@@ -294,6 +375,7 @@
 		};
 		2C9BE47321183DE600670E90 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01F25CB7F2BFE01D777753DE /* Pods-client-mpp-ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -301,6 +383,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/bin/iosX64/main/debug/framework",
 					"$(PROJECT_DIR)/build/bin/iosArm64/main/debug/framework",
+					"$(PROJECT_DIR)/build/bin/iosX64/mainDebugFramework",
 				);
 				INFOPLIST_FILE = "client-mpp-ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -318,6 +401,7 @@
 		};
 		2C9BE47421183DE600670E90 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5896AD7428820A8C369D798 /* Pods-client-mpp-ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -325,6 +409,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/bin/iosX64/main/debug/framework",
 					"$(PROJECT_DIR)/build/bin/iosArm64/main/debug/framework",
+					"$(PROJECT_DIR)/build/bin/iosX64/mainDebugFramework",
 				);
 				INFOPLIST_FILE = "client-mpp-ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (

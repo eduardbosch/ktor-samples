@@ -1,0 +1,6 @@
+target 'client-mpp-ios' do
+  use_frameworks!
+
+  pod 'Firebase/Core', '~> 5.19.0'
+  pod 'Firebase/Performance', '~> 5.19.0'
+end
